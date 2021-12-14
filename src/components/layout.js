@@ -35,9 +35,9 @@ const Layout = ({ isHomePage, children }) => {
       <main>{children}</main>
 
       <footer>
-        © {new Date().getFullYear()}, Built by:
+        © {new Date().getFullYear()}
         {` `}
-        <a href="https://www.getunedited.com">Unedited Web Design</a>
+        <a href="https://www.getunedited.com">Unedited Web Technologies</a>
       </footer>
     </div>
   )

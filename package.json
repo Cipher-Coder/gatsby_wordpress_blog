@@ -1,21 +1,21 @@
 {
-  "name": "gatsby-starter-wordpress-blog",
+  "name": "gatsby-wordpress-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Unedited Web Technologies Blog",
   "version": "1.0.0",
   "author": "Matthew Rebehn <matthew@mattaz.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Cipher-Coder/gatsby_wordpress_blog/issues"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/Cipher-Coder/gatsby_wordpress_blog#readme",
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Cipher-Coder/gatsby_wordpress_blog"
   },
   "scripts": {
     "build": "gatsby build",
@@ -37,7 +37,6 @@
     "gatsby-transformer-sharp": "^4.0.0",
     "html-react-parser": "^1.1.1",
     "lodash": "^4.17.20",
-    "postcss": "^8.2.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^5.2.1",
@@ -45,7 +44,11 @@
     "typeface-montserrat": "1.1.13"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
     "dumper.js": "^1.3.1",
-    "prettier": "2.2.1"
+    "gatsby-plugin-postcss": "^5.3.0",
+    "postcss": "^8.4.5",
+    "prettier": "2.2.1",
+    "tailwindcss": "^3.0.2"
   }
 }
