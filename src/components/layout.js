@@ -37,7 +37,8 @@ const Layout = ({ isHomePage, children }) => {
       <footer>
         © {new Date().getFullYear()}
         {` `}
-        <a href="https://www.getunedited.com">Unedited Web Technologies</a>
+        <a href="https://www.getunedited.com">Unedited Web Technologies</a>{" "}
+        <span className="underline font-bold">All Rights Reserved</span>
       </footer>
     </div>
   )
