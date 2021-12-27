@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
+import Footer from "../components/Footer"
 
 const Layout = ({ isHomePage, children }) => {
   const {
@@ -33,13 +34,7 @@ const Layout = ({ isHomePage, children }) => {
       </header>
 
       <main>{children}</main>
-
-      <footer>
-        © {new Date().getFullYear()}
-        {` `}
-        <a href="https://www.getunedited.com">Unedited Web Technologies</a>{" "}
-        <span className="underline font-bold">All Rights Reserved</span>
-      </footer>
+      <Footer />
     </div>
   )
 }
