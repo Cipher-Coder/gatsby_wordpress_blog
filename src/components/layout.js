@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 const Layout = ({ isHomePage, children }) => {
   const {
     wp: {
-      generalSettings: { title },
+      generalSettings: { title, description },
     },
   } = useStaticQuery(graphql`
     query LayoutQuery {
@@ -23,9 +23,12 @@ const Layout = ({ isHomePage, children }) => {
     <div className="global-wrapper" data-is-root-path={isHomePage}>
       <header className="global-header">
         {isHomePage ? (
-          <h1 className="main-heading">
-            <Link to="/">{parse(title)}</Link>
-          </h1>
+          <div>
+            <h1 className="main-heading text-center">
+              <Link to="/">{parse(title)}</Link>
+            </h1>
+            <p className="text-center">{parse(description)} Get Unedited.</p>
+          </div>
         ) : (
           <Link className="header-link-home" to="/">
             {title}
